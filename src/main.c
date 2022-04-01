@@ -9,6 +9,8 @@ int main(){
                         b.board[i][j]=69;
         }
         print_board(&b);
+        put_x(&b,1,1);
+        print_board(&b);
 
         return 0;        
 }
