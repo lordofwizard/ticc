@@ -2,5 +2,6 @@
 
 int main(){
 	printf("Hello Ticc");
-	return 0;
+
+	return 0;        
 }
