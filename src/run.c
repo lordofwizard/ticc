@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "board.h"
+#include "run.h"
 
 void run(){
         
@@ -26,10 +27,11 @@ void clear(void)
         #endif
 }
 void help(){
-There are only 4 Basic commands to play this game
-help :- help command prints this help message
-
+p("There are only 4 Basic commands to play this game");
+p("help :- help command prints this help message");
 }
+
+
 void p(const char * message){
         printf("%s\n",message);
 }
