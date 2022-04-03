@@ -3,7 +3,7 @@
 #include "run.h"
 
 void run(){
-        
+
 }
 void greet(){
         clear();
@@ -26,11 +26,11 @@ void clear(void)
     //you can also throw an exception indicating the function can't be used
         #endif
 }
-void help(){
-p("There are only 4 Basic commands to play this game");
-p("help :- help command prints this help message");
-}
 
+void help(){
+        p("There are only 4 Basic commands to play this game");
+        p("help :- help command prints this help message");
+}
 
 void p(const char * message){
         printf("%s\n",message);

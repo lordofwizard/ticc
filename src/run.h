@@ -7,6 +7,4 @@ void clear(void);
 void help();
 
 
-
-
 #endif
