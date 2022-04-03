@@ -5,8 +5,12 @@
 
 //void put_o(struct Board * board, int x, int y);
 
+#define XCH 88
+#define OCH 79
+
 enum state{
-        Win,
+        WinO,
+        WinX,
         Draw,
         NotEmpty
 };

@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include "board.h"
 
-#define XCH 88
-#define OCH 79
-
 void print_board(struct Board * board){
         printf("\n");
         printf("| %c | %c | %c |\n", board->board[0][0] , board->board[0][1],board->board[0][2]);
