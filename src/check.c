@@ -35,5 +35,8 @@ void check()
     {
         return stcB->board[0][2];
     }
-    
+
+
+
+
 }
