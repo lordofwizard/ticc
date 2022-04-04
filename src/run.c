@@ -6,16 +6,19 @@ void run(){
         clear();
         greet();
         struct Board b;
-        for(int i = 0; i < 3; i ++){
-                for(int j = 0 ; j < 3 ; j++)
-                        b.board[i][j]=69;
+        for(int i = 0; i < 3; i ++)for(int j = 0 ; j < 3 ; j++)b.board[i][j]=32;
+        bool state = true;
+        char command[100];
+        while(state){
+                printf("Please input command in the following prompt \n:- ");
+                scanf("%s",&command);
+               clear();
+               if(compare(command,"exit")) state = false;
+               if(compare(command,"help")) help();
+ 
         }
-        print_board(&b);
-        put_x(&b,1,1);
-        print_board(&b);
-
-        help();
 }
+
 void greet(){
         clear();
         printf("Hello there!\n");
@@ -47,4 +50,21 @@ void help(){
 
 void p(const char * message){
         printf("%s\n",message);
+}
+int compare(char a[],char b[])  
+{  
+    int flag=0,i=0;  // integer variables declaration  
+    while(a[i]!='\0' &&b[i]!='\0')  // while loop  
+    {  
+       if(a[i]!=b[i])  
+       {  
+           flag=1;  
+           break;  
+       }  
+       i++;  
+    }  
+    if(flag==0)  
+    return 1;  
+    else  
+    return 0;  
 }

@@ -17,6 +17,7 @@ enum state{
 
 struct Board{
         int board[3][3];
+
 };
 void print_board(struct Board * board);
 void put_o(struct Board * board,int x, int y);
