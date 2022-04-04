@@ -20,4 +20,3 @@ clean:
 	$(RM) $(TARGET) $(OBJS) $(DEPS)
 
 -include $(DEPS)
-

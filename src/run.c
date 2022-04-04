@@ -3,7 +3,18 @@
 #include "run.h"
 
 void run(){
+        clear();
+        greet();
+        struct Board b;
+        for(int i = 0; i < 3; i ++){
+                for(int j = 0 ; j < 3 ; j++)
+                        b.board[i][j]=69;
+        }
+        print_board(&b);
+        put_x(&b,1,1);
+        print_board(&b);
 
+        help();
 }
 void greet(){
         clear();
@@ -12,7 +23,6 @@ void greet(){
         printf("This game is run via some basic commands. For total documentation follow following link\n");
         printf("https://github.com/lordofwizard/ticc");
 }
-
 
 void clear(void)
 {
@@ -30,6 +40,9 @@ void clear(void)
 void help(){
         p("There are only 4 Basic commands to play this game");
         p("help :- help command prints this help message");
+        p("start :- to start the game");
+        p("exit :- to exit the game");
+        p("1* 2* :- to put a value (X or O) to specific position.. \n Note '*'s are not included.. put 2 space separated integers for position");
 }
 
 void p(const char * message){

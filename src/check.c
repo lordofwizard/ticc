@@ -44,3 +44,4 @@ enum state check(struct Board * stcB)
     }
     return boardState;
 }
+

@@ -5,6 +5,7 @@
 #include "board.h"
 #include <stdlib.h>
 
+void run();
 void p(const char * message);
 void greet();
 void clear(void);

@@ -1,17 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "board.h"
+#include "run.h"
 
 int main(){
 	printf("Hello Ticc");
-        struct Board b;
-        for(int i = 0; i < 3; i ++){
-                for(int j = 0 ; j < 3 ; j++)
-                        b.board[i][j]=69;
-        }
-        print_board(&b);
-        put_x(&b,1,1);
-        print_board(&b);
-
+        run();
         return 0;        
 }
