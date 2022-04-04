@@ -8,14 +8,14 @@ void run(){
         struct Board b;
         for(int i = 0; i < 3; i ++)for(int j = 0 ; j < 3 ; j++)b.board[i][j]=32;
         bool state = true;
-        char command[100];
+        int x,y;
         while(state){
-                printf("Please input command in the following prompt \n:- ");
-                scanf("%s",&command);
-               clear();
-               if(compare(command,"exit")) state = false;
-               if(compare(command,"help")) help();
- 
+                printf("Please input 2 space seperated integers to put value of X or O on positions"); 
+                scanf("%s %s",x,y);
+                clear();
+//                if(compare(command1,"exit")) state = false;
+//                if(compare(command2,"help")) help();
+//                printf("%s",command);
         }
 }
 
